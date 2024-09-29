@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Unit Converter</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="converter-div">
+        <h1 class="heading-primary">Unit Converter</h1>
+        <div class="selector">
+          <div class="selector-item-box">
+            <input
+              type="radio"
+              name="conversion"
+              id="kmToMiles"
+              class="radio-input"
+            />
+            <label for="kmToMiles" class="selector-title"
+              >Kilometers to Miles</label
+            >
+          </div>
+          <div class="selector-item-box">
+            <input
+              type="radio"
+              name="conversion"
+              id="celsiusToFahrenheit"
+              class="radio-input"
+            />
+            <label for="celsiusToFahrenheit" class="selector-title"
+              >Celsius to Fahrenheit</label
+            >
+          </div>
+        </div>
+        <div class="calc-div hidden">
+          <p class="calc-input-title" id="calc-title">Kilometer</p>
+          <input type="number" id="number" class="calcInput" />
+          <label class="calc-input-title" id="resultTitle">Result</label>
+          <input type="number" id="result" class="calcInput" readonly />
+        </div>
+        <div class="btn-div hidden">
+          <button class="btn btn-convert marin-right">Convert</button>
+          <button class="btn btn-clear">Clear</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
